@@ -1,0 +1,137 @@
+body {
+    font-family: arial, sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    display: block;
+}
+
+nav {
+    display: flex;
+    float:right;
+    vertical-align: middle;
+    margin-top: 14px;
+    margin-right: 14px
+}
+
+.navmenu {
+    display: flex;
+}
+
+.navicons {
+    display: flex;
+}
+
+.navmenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+    font-size: 13px;
+    margin: 0px 10px;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+#dropdown-button {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(http://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+    background-size: 528px 68px;
+    background-position: -132px -38px;
+    position: relative;
+    top: -5px;
+    margin: 0px 10px;
+    opacity: 55%;
+}
+
+#dropdown-button:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+#profile-button {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(data:image/png;base64,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);
+    background-size: 30px 30px;
+    position: relative;
+    top: -5px;
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+
+#profile-button {
+    cursor: pointer;
+}
+
+#logo {
+    margin-top:170px;
+    display: block;
+    position: relative;
+    left: calc(50% - 272px/2);
+    cursor: pointer;
+}
+
+#logo-default {
+    margin: auto;
+}
+
+.searchform {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top:20px;
+}
+
+#search-query {
+    min-height:44px;
+    max-width: 500px;
+    border-radius: 18px;
+    position: relative;
+    left: calc(50% - 500px/2);
+    border: 1px solid #dfe1e5;
+    font-size: 13px;
+    padding-left: 20px;
+}
+
+.submit-button {
+    margin: 30px 8px;
+    padding: 10px 14px;
+    background-color: #f2f2f2;
+    color: #5F6368;
+    border-radius: 4px;
+    border: 0;
+    font-size: 13px;
+}
+
+.form-button {
+    display: flex;
+    margin-top:30px;
+    margin: auto;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+}
