@@ -19,8 +19,12 @@ nav {
     margin-right: 14px
 }
 
-.navmenu {
-    display: flex;
+#rightmenu {
+    float: right;
+}
+
+#leftmenu {
+    float: left;
 }
 
 .navicons {
@@ -31,7 +35,7 @@ nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    float: right;
+  
 
 }
 
